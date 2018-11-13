@@ -1,5 +1,5 @@
 
-# BinaryStream
+# Bitter
 *.NET Standard 2.0 Library for manipulating binary data*
 
 **The library supports reading and writing**
@@ -31,8 +31,8 @@ stream.ByteOrder = Endianness.LittleEndian;     // or through the constructor
 stream.DefaultTextEncoding = TextEncoding.UTF8; // what text encoding should we use as default, 
                                                 // this can be set through the constructor.
 
-Reader read = stream.Read;                      // you can still use stream.Read.Type
-Writer write = stream.Write;                    // i just think this makes my code easier to read
+BinaryReader read = stream.Read;                      // you can still use stream.Read.Type
+BinaryWriter write = stream.Write;                    // i just think this makes my code easier to read
 
 byte[] bytes = new byte[] { 1, 2, 4, 7 };
 int[] ints = new int[] { -1, 200, 7600, 984, -999 };
